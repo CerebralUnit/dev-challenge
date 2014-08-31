@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Box</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	
+		<img class="boxImage" src="BOX-TEST-LAYOUT.png" alt="">
+
+		<div class="box">
+			<div class="leftContainer">
+				<div class="topLeft"></div>
+				<div class="midLeft"></div>
+			</div>
+			
+			<div class="topRight"></div>
+			<div class="bottomContainer">
+				<div class="bottomLeft"></div>
+				<div class="bottomCenter"></div>
+				<div class="bottomRightTop"></div>
+				<div class="bottomRightBottom"></div>
+			</div>
+		</div>
+
+		<a class="button" href="#">Click to Compare</a>
+		<div class="current">CSS</div>
+</body>
+<script src="js/jquery-1.11.1.min.js"></script>
+<script>
+	$('.button').click(function(event){
+			event.preventDefault();
+			toggleBox();
+	});
+
+	function toggleBox(){
+		if ($('.box').is(':visible')){
+			$('.box').fadeOut(function(){
+				$('.boxImage').fadeIn();
+				$('.current').html('Image');
+			});
+		}else if ($('.boxImage').is(':visible')){
+			$('.boxImage').fadeOut(function(){
+				$('.box').fadeIn();
+				$('.current').html('CSS');
+			});
+		}
+	}
+</script>
+</html>

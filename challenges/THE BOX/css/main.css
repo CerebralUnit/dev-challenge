@@ -1,0 +1,92 @@
+body               {    font-family: century gothic }
+
+.box               {    position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 550px;
+                        height: 500px;
+                        margin: 35px 37px;
+                        padding: 10px 11px;
+                        box-shadow: 0 0 4px #6d6d6d;
+                        -moz-box-shadow: 0 0 4px #6d6d6d;
+                        -webkit-box-shadow: 0 0 4px #6d6d6d;
+                        opacity: 1;
+                   }
+
+.leftContainer     {    height: 400px;
+                        width: 140px;
+                        float: left;
+                        margin-right: 10px;
+                   }
+
+.topRight          {    width: 400px;
+                        height: 400px;
+                        margin-bottom: 10px;
+                        background: #f1ab3c;
+                        float: left;
+                   }
+
+.topLeft,
+.midLeft           {    height: 195px;
+                        margin-bottom: 10px;
+                   }
+
+.topLeft           {    background: #68884b }
+
+.midLeft           {    background: #81bb4d }
+
+.bottomContainer   {    width: 100%;
+                        height: 90px;
+                        float: left;
+                   }
+
+.bottomLeft        {    width: 290px;
+                        height: 90px;
+                        background: #2669a8;
+                        float: left;
+                        margin-right: 10px;
+                   }
+
+.bottomCenter      {    width: 90px;
+                        height: 90px;
+                        background: #4794dc;
+                        float: left;
+                        margin-right: 10px;
+                   }
+
+.bottomRightTop    {    height: 40px;
+                        width: 150px;
+                        float: left;
+                        background: #87bff4;
+                        margin-bottom: 10px;
+                   }
+
+.bottomRightBottom {    height: 40px;
+                        width: 150px;
+                        float: left;
+                        background: #b6dbfe;
+                   }
+
+.boxImage          {    display: none }
+
+.button            {    position: absolute;
+                        top: 34px;
+                        left: 632px;
+                        text-decoration: none;
+                        display: block;
+                        padding: 6px 12px;
+                        background: #87bff4;
+                        color: #000;
+                        font-size: 11px;
+                   }
+
+.button:hover      {    background: #4794dc;
+                        color: #fff;
+                   }
+
+.button:active     {    background: #3683cb }
+
+.current           {    position: absolute;
+                        top: 70px;
+                        left: 632px;
+                   }
